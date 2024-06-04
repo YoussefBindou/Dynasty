@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/commands.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <title>Dynasty Bot</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a href="" class="navbar-brand text-info">Dynasty Bot</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"><span
+                    class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="../../" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Links</a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="linksdrop">
+                            <li><a class="dropdown-item text-muted" href="https://discord.com/api/oauth2/authorize?client_id=1131780123956363375&permissions=8&scope=bot">Invite</a></li>
+                            <li><a class="dropdown-item text-muted" href="https://discord.gg/3MVXjDA85d">Support Server</a></li></li>
+                        </ul>
+                    </li>
+                </ul>
+                <li class="navbar-nav nav-item"><a href="https://top.gg/bot/1131780123956363375/vote" class="btn btn-outline-info">Vote For Me</a></li>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section style="margin-top: 9%;">
+            <div class="row">
+                <div class="col-sm-6 my-1">
+                    <h2 class="fw-bold">Dynasty Commands</h2>
+                    <p class="command-descreption">Find all Dynasty bot commands and information you need fast and easy</p>
+                </div>
+                <div class="col-sm-6 my-1">
+                   <!-- banner -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:100%;height:90px"
+                         data-ad-client="ca-pub-4050940490843957"
+                         data-ad-slot="6770580457"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <div class="mt-4"></div>
+        <div class="row">
+            <div class="col-md-4 my-2">
+                <div class="card p-3">
+                    <h5>Select Commands Category</h5>
+                    <hr />
+                    <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; All Commands</button>
+
+                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Economy Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; Voice Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Setup Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Staff Commands</button>
+
+                        <button onclick="active(this)" id="CategoryBtn4" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Marriage Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn5" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; Fun Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn10" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; image Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn6" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Moderation Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn7" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Premium Commands</button>
+
+                        <button onclick="active(this)" id="CategoryBtn8" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Info Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn9" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; Security Commands</button>
+                    
+                </div>
+            </div>
+            <div class="col-md-8 my-2">
+               <!--  <input type="text" class="w-100 search-box" oninput="search(this.value)" placeholder="Search for commands" /> -->
+                
+                    
+                        <div class="mt-4"></div>
+                    
+                        <div class="commands-section" id="Category0">
+                            <!-- eco -->
+                        </div>
+                        
+                        <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const commandsData = [
+                                { name: 'bal', description: 'Check balance', usage: 'bal\nbal @user' },
+                                { name: 'daily', description: 'Get daily rewards', usage: 'daily' },
+                                { name: 'transfer', description: 'Transfer money to another user', usage: 'transfer @user amount' },
+                                { name: 'card', description: 'Check User card', usage: 'card\ncard @user' },
+                                // Add more commands here
+                            ];
+                        
+                            const commandsSection = document.getElementById('Category0');
+                        
+                            commandsData.forEach(command => {
+                                const commandElement = document.createElement('div');
+                                commandElement.className = 'accordion accordion-flush mt-2';
+                                commandElement.innerHTML = `
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne-${command.name}">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f${command.name}">
+                                                ${command.name}&nbsp; <span class="command-descreption">- ${command.description}</span>
+                                            </button>
+                                        </h2>
+                                        <div id="f${command.name}" class="accordion-collapse collapse" data-bs-parent="#flush-headingOne-${command.name}">
+                                            <div class="accordion-body">
+                                                <span>Usage Examples:</span> <br />
+                                                <span class="examples">${command.usage}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+                                commandsSection.appendChild(commandElement);
+                            });
+                        });
+                        </script>
+
+                    <div class="commands-section" id="Category1">
+                        <!-- Commands -->
+                    </div>
+
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const commandsData = [
+                            { name: 'activity', description: 'Disable activity', usage: 'activity-on\nactivity-off' },
+                            { name: 'cam', description: 'Enable/Disable camera', usage: 'cam-on\ncam-off' },
+                            { name: 'sb', description: 'Enable/Disable sound', usage: 'sb-on\nsb-off' },
+                            { name: 'forcemute', description: 'Mute all users in your voice', usage: 'forcemute' },
+                            { name: 'forceunmute', description: 'Unmute all users in your voice', usage: 'forceunmute' },
+                            { name: 'voicemute', description: 'Mute a user in your voice', usage: 'voicemute @user' },
+                            { name: 'voiceunmute', description: 'Unmute a user in your voice', usage: 'voiceunmute @user' },
+                            { name: 'massmove', description: 'Mass move from voice to voice', usage: 'massmove [oldroom] [newroom]' },
+                            { name: 'move', description: 'Move a user to another voice', usage: 'move @user roomname' },
+                            { name: 'vckick', description: 'Kick a user from your voice', usage: 'vckick @user' },
+                            { name: 'vclist', description: 'Show users in your voice', usage: 'vclist' },
+                            { name: 'find', description: 'Find member in voice', usage: 'find @user' }
+                            // Add more commands here
+                        ];
+
+                        const commandsSection = document.getElementById('Category1');
+
+                        commandsData.forEach(command => {
+                            const commandElement = document.createElement('div');
+                            commandElement.className = 'accordion accordion-flush mt-2';
+                            commandElement.innerHTML = `
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne-${command.name}">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f${command.name}">
+                                            ${command.name}&nbsp; <span class="command-descreption">- ${command.description}</span>
+                                        </button>
+                                    </h2>
+                                    <div id="f${command.name}" class="accordion-collapse collapse" data-bs-parent="#flush-headingOne-${command.name}">
+                                        <div class="accordion-body">
+                                            <span>Usage Examples:</span> <br />
+                                            <span class="examples">${command.usage}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                            commandsSection.appendChild(commandElement);
+                        });
+                    });
+                    </script>
+                    
+                    <div class="commands-section" id="Category2">
+                        <!-- Commands -->
+                    </div>
+                    
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const commandsData = [
+                            { name: 'setupverification', description: 'Setup verification system', usage: '/setupverification :unverifiedrole: malerole: femalerole: staffrole: logsroom:' },
+                            { name: 'setupjail', description: 'Setup jail system', usage: '/setupjail jailrole: jailerrole: logsroom:' },
+                            { name: 'setupwarn', description: 'Setup warning system', usage: '/setupwarn :role1: role2: role3: warnstaff: warnlogs:' },
+                            { name: 'setupwelcomechannel', description: 'Setup welcome channel', usage: '/setupwelcomechannel :channel:' },
+                            { name: 'setupsuggestions', description: 'Setup suggestions channel', usage: '/setupsuggestions :channel:' },
+                            { name: 'setuplogschannel', description: 'Setup logs channel', usage: '/setuplogschannel :channel:' },
+                            { name: 'enablecmd', description: 'Enable command', usage: 'enablecmd cmdname' },
+                            { name: 'disablecmd', description: 'Disable command', usage: 'disablecmd cmdname' },
+                            { name: 'check', description: 'Check general setups', usage: 'check' },
+                            { name: 'checksecurity', description: 'Check security setups', usage: 'checksecurity' },
+                            { name: 'checkstaff', description: 'Check staff setups', usage: 'checkstaff' }
+                            // Add more commands here
+                        ];
+                    
+                        const commandsSection = document.getElementById('Category2');
+                    
+                        commandsData.forEach(command => {
+                            const commandElement = document.createElement('div');
+                            commandElement.className = 'accordion accordion-flush mt-2';
+                            commandElement.innerHTML = `
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne-${command.name}">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f${command.name}">
+                                            ${command.name}&nbsp; <span class="command-descreption">- ${command.description}</span>
+                                        </button>
+                                    </h2>
+                                    <div id="f${command.name}" class="accordion-collapse collapse" data-bs-parent="#flush-headingOne-${command.name}">
+                                        <div class="accordion-body">
+                                            <span>Usage Examples:</span> <br />
+                                            <span class="examples">${command.usage}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                            commandsSection.appendChild(commandElement);
+                        });
+                    });
+                    </script>
+                    
+                    <div class="commands-section" id="Category3">
+                        <!-- Commands -->
+                    </div>
+                    
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const commandsData = [
+                            { name: 'vb', description: 'Verify as boy', usage: 'vb user' },
+                            { name: 'vg', description: 'Verify as girl', usage: 'vg user' },
+                            { name: 'jail', description: 'Jail a user', usage: 'jail user reason' },
+                            { name: 'unjail', description: 'Unjail a user', usage: 'unjail user' },
+                            { name: 'warn', description: 'Warn a user', usage: 'warn user reason' },
+                            { name: 'unwarn', description: 'Remove a warning from a user', usage: 'unwarn user' }
+                            // Add more commands here
+                        ];
+                    
+                        const commandsSection = document.getElementById('Category3');
+                    
+                        commandsData.forEach(command => {
+                            const commandElement = document.createElement('div');
+                            commandElement.className = 'accordion accordion-flush mt-2';
+                            commandElement.innerHTML = `
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne-${command.name}">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f${command.name}">
+                                            ${command.name}&nbsp; <span class="command-descreption">- ${command.description}</span>
+                                        </button>
+                                    </h2>
+                                    <div id="f${command.name}" class="accordion-collapse collapse" data-bs-parent="#flush-headingOne-${command.name}">
+                                        <div class="accordion-body">
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">${command.usage}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                            commandsSection.appendChild(commandElement);
+                        });
+                    });
+                    </script>
+                   
+                    <div class="commands-section" id="Category4">
+                        <!-- Marry Commands -->
+                    </div>
+                    
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const commandsData = [
+                            { name: '=marry', description: 'Propose marriage to another user', usage: '=marry [user]' },
+                            { name: 'marrystats', description: 'Check marriage statistics', usage: 'marrystats' },
+                            { name: 'divorce', description: 'Divorce your partner', usage: 'divorce' },
+                            // Add more commands here
+                        ];
+                    
+                        const commandsSection = document.getElementById('Category4');
+                    
+                        commandsData.forEach(command => {
+                            const commandElement = document.createElement('div');
+                            commandElement.className = 'accordion accordion-flush mt-2';
+                            commandElement.innerHTML = `
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne-${command.name}">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#${command.name}Collapse">
+                                            ${command.name} 
+                                        </button>
+                                    </h2>
+                                    <div id="${command.name}Collapse" class="accordion-collapse collapse" data-bs-parent="#flush-headingOne-${command.name}">
+                                        <div class="accordion-body">
+                                            <span>Usage Example:</span> <br />
+                                            <span class="examples">${command.usage}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                            commandsSection.appendChild(commandElement);
+                        });
+                    });
+                    </script>
+        
+                    <div class="commands-section" id="Category10">
+                        <!-- Img Cmd -->
+                    </div>
+                    
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const commandsData = [
+                        { name: 'ad', description: 'Generate an ad effect', usage: 'ad user' },
+                        { name: 'affect', description: 'Generate an affect effect', usage: 'Usage affect user' },
+                        { name: 'batslap', description: 'Generate a batslap effect', usage: 'Usage batslap user' },
+                        { name: 'beautiful', description: 'Generate a beautiful effect', usage: 'Usage beautiful user' },
+                        { name: 'bed', description: 'Generate a bed effect', usage: 'Usage bed user' },
+                        { name: 'blink', description: 'Generate a blink effect', usage: 'Usage blink user1 user2 ...' },
+                        { name: 'rip', description: 'Generate a rip effect', usage: 'Usage rip user' },
+                        { name: 'blur', description: 'Generate a blur effect', usage: 'Usage blur user' },
+                        { name: 'bobross', description: 'Generate a bobross effect', usage: 'Usage bobross user' },
+                        { name: 'circle', description: 'Generate a circle effect', usage: 'Usage circle user' },
+                        { name: 'mms', description: 'Generate an mms effect', usage: 'Usage mms user' },
+                        { name: 'clown', description: 'Generate a clown effect', usage: 'Usage clown user' },
+                        { name: 'color code', description: 'Generate a color code effect', usage: 'Usage color code' },
+                        { name: 'confusedstonk', description: 'Generate a confusedstonk effect', usage: 'Usage confusedstonk user' },
+                        { name: 'deepfry', description: 'Generate a deepfry effect', usage: 'Usage deepfry user' },
+                        { name: 'delete', description: 'Generate a delete effect', usage: 'Usage delete user' },
+                        { name: 'denoise', description: 'Generate a denoise effect', usage: 'Usage for denoise user' },
+                        { name: 'discordblack', description: 'Generate a discordblack effect', usage: 'Usage discordblack user' },
+                        { name: 'discordblue', description: 'Generate a discordblue effect', usage: 'Usage discordblue user' },
+                        { name: 'facepalm', description: 'Generate a facepalm effect', usage: 'Usage facepalm user' },
+                        { name: 'fjail', description: 'Generate a fjail effect', usage: 'Usage fjail user' },
+                        { name: 'gay', description: 'Generate a gay effect', usage: 'Usage gay user' },
+                        { name: 'greyscale', description: 'Generate a greyscale effect', usage: 'Usage greyscale user' },
+                        { name: 'heartbreaking', description: 'Generate a heartbreaking effect', usage: 'Usage heartbreaking user' },
+                        { name: 'invert', description: 'Generate an invert effect', usage: 'Usage invert user' },
+                        { name: 'karaba', description: 'Generate a karaba effect', usage: 'Usage karaba user' },
+                        { name: 'kiss', description: 'Generate a kiss effect', usage: 'Usage kiss user' },
+                        { name: 'mikkelsen', description: 'Generate a mikkelsen effect', usage: 'Usage mikkelsen user' },
+                        { name: 'mirror', description: 'Generate a mirror effect', usage: 'Usage mirror user' },
+                        { name: 'notstonk', description: 'Generate a notstonk effect', usage: 'Usage notstonk user' },
+                        { name: 'podium', description: 'Generate a podium effect', usage: 'Usage podium user1 user2' },
+                        { name: 'sepia', description: 'Generate a sepia effect', usage: 'Usage sepia user' },
+                        { name: 'spank', description: 'Generate a spank effect', usage: 'Usage spank user' },
+                        { name: 'stonk', description: 'Generate a stonk effect', usage: 'Usage stonk user' },
+                        { name: 'doublestonk', description: 'Generate a doublestonk effect', usage: 'Usage doublestonk user1 user2' },
+                        { name: 'tatoo', description: 'Generate a tatoo effect', usage: 'Usage tatoo user' },
+                        { name: 'trash', description: 'Generate a trash effect', usage: 'Usage trash user' },
+                        { name: 'triggered', description: 'Generate a triggered effect', usage: 'Usage triggered user' },
+                        { name: 'wanted', description: 'Generate a wanted effect', usage: 'Usage wanted user' },
+                        { name: 'lc', description: 'Love calculation', usage: 'Usage lc cmd user' }
+];
+
+                    
+                        const commandsSection = document.getElementById('Category10');
+                    
+                        commandsData.forEach(command => {
+                            const commandElement = document.createElement('div');
+                            commandElement.className = 'accordion accordion-flush mt-2';
+                            commandElement.innerHTML = `
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne-${command.name}">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f${command.name}">
+                                            ${command.name} <span class="command-descreption">- ${command.description}</span>
+                                        </button>
+                                    </h2>
+                                    <div id="f${command.name}" class="accordion-collapse collapse" data-bs-parent="#flush-headingOne-${command.name}">
+                                        <div class="accordion-body">
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">${command.usage}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                            commandsSection.appendChild(commandElement);
+                        });
+                    });
+                    </script>
+                    
+
+                    <div class="commands-section" id="Category5">
+                        <!-- Fun Commands -->
+                    </div>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const funCommandsData = [
+                                { name: '8ball', description: 'Ask the magic 8-ball a question', usage: '8ball [question]' },
+                                { name: 'fbi', description: 'FBI open up!', usage: 'fbi @user' },
+                                { name: 'girlfriend/gf', description: 'Summon a virtual girlfriend', usage: 'girlfriend' },
+                                { name: 'howgay', description: 'Determine someone\'s gayness level', usage: 'howgay @user' },
+                                { name: 'job', description: 'Get a random job suggestion', usage: 'job' },
+                                { name: 'pp', description: 'Measure someone\'s pp size', usage: 'pp @user' },
+                                { name: 'angry', description: 'Express your anger', usage: 'angry' },
+                                { name: 'blush', description: 'Get shy and blush', usage: 'blush' },
+                                { name: 'cry', description: 'Shed some tears', usage: 'cry' },
+                                { name: 'rps', description: 'Play rock-paper-scissors', usage: 'rps' },
+                                { name: 'hack', description: 'Pretend to be a hacker', usage: 'hack' },
+                                { name: 'hug', description: 'Give someone a warm hug', usage: 'hug @user' },
+                                { name: 'kiss', description: 'Send a kiss to someone', usage: 'kiss @user' },
+                                { name: 'lick', description: 'Lick someone', usage: 'lick @user' },
+                                { name: 'pat', description: 'Pat someone', usage: 'pat @user' },
+                                { name: 'slap', description: 'Slap someone', usage: 'slap @user' },
+                                { name: 'spank', description: 'Spank someone', usage: 'spank @user' },
+                                { name: 'say', description: 'Make the bot say something', usage: 'say [message]' },
+                                { name: 'js', description: 'Execute JavaScript code', usage: 'js [code]' },
+                                { name: 'snipe', description: 'Snipe a message', usage: 'snipe [channel]' }
+                                // Add more commands here
+                            ];
+                            
+                            const funCommandsSection = document.getElementById('Category5');
+                            
+                            funCommandsData.forEach(command => {
+                                const commandElement = document.createElement('div');
+                                commandElement.className = 'accordion accordion-flush mt-2';
+                                commandElement.innerHTML = `
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne-${command.name}">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f${command.name}">
+                                                ${command.name}&nbsp; <span class="command-descreption">- ${command.description}</span>
+                                            </button>
+                                        </h2>
+                                        <div id="f${command.name}" class="accordion-collapse collapse" data-bs-parent="#flush-headingOne-${command.name}">
+                                            <div class="accordion-body">
+                                                <span>Usage:</span> <br />
+                                                <span class="examples">${command.usage}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+                                funCommandsSection.appendChild(commandElement);
+                            });
+                        });
+                    </script>
+                
+
+                <div class="commands-section" id="Category6">                
+                    <!--Mod Cmds-->
+                </div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+    const modCommandsData = [
+        { name: 'Ban', description: 'ban member From User Server', usage: 'ban user reason' },
+        { name: 'Kick', description: 'kick member From User Server', usage: 'kick user' },
+        { name: 'Timeout', description: 'timeout member From User Server', usage: 'timeout user time' },
+        { name: 'Mute', description: 'mute member From User Server', usage: 'mute user' },
+        { name: 'Unban', description: 'unban member From User Server', usage: 'unban user' },
+        { name: 'Untimeout', description: 'untimeout member From User Server', usage: 'untimeout user' },
+        { name: 'Unmute', description: 'Unmute member From User Server', usage: 'unmute user' },
+        { name: 'Clear', description: 'Clear Messages from 1 to 99', usage: 'Clear[1-99]' },
+        { name: 'Lock', description: 'lock channel', usage: 'lock' },
+        { name: 'Unlock', description: 'unlock channel', usage: 'unlock' },
+        { name: 'Hide', description: 'hide channel', usage: 'hide' },
+        { name: 'Show', description: 'show channel', usage: 'show' },
+        { name: 'Slowmode', description: 'set slowmode for the current channel', usage: 'slowmode [0s-6h]' },
+        { name: 'Role', description: 'add/remove role of mentioned member', usage: 'role [user] [role]' },
+        { name: 'Nick', description: 'change nickname of user in server', usage: 'nick [user] [name]' },
+        { name: 'Poll', description: 'create a Yes/No Poll', usage: 'poll [Poll Text]' },
+        { name: 'TempRole', description: 'give member role (with duration)', usage: 'temprole [user] [role] [time]' }
+    ];
+
+    const modCommandsSection = document.getElementById('Category6');
+
+    modCommandsData.forEach(command => {
+        const commandElement = document.createElement('div');
+        commandElement.className = 'accordion accordion-flush mt-2';
+        commandElement.innerHTML = `
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne-${command.name}">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f${command.name}">
+                        ${command.description}
+                    </button>
+                </h2>
+                <div id="f${command.name}" class="accordion-collapse collapse" data-bs-parent="#flush-headingOne-${command.name}">
+                    <div class="accordion-body">
+                        Usage:
+                        <br />
+                        <span class="examples">${command.usage}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+        modCommandsSection.appendChild(commandElement);
+    });
+});
+
+                </script>
+
+                <div class="commands-section" id="Category7">
+                    <!--Prem-->
+                </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const commandsData = [
+                        { name: 'buyprem', description: 'Buy Premium', usage: '/buyprem' },
+                        { name: 'embed', description: 'Create and send an embed message', usage: '/embed' },
+                        { name: 'addemoji', description: 'Add an emoji to the server', usage: '=addemoji [emoji]' },
+                        { name: 'addrole/denyuser', description: 'Add/deny role to channel permissions.', usage: '=addrole/denyuser [role]' },
+                        { name: 'adduser/denyuser', description: 'Add/deny user to channel permissions.', usage: '=adduser/denyuser [user]' },
+                        { name: 'hideall/showall', description: 'Hide/show all channels in the server.', usage: '=hideall/=showall' },
+                        { name: 'lockall/unlockall', description: 'Lock/unlock all channels in the server.', usage: '=lockall/=unlockall' },
+                        { name: 'moveall', description: 'Move all members to your voice channel.', usage: '=moveall' },
+                        { name: 'setbanner/seticon', description: 'Setup server banner & icon.', usage: '=setbanner/=seticon' },
+                        { name: 'topinvites', description: 'Show the top users with the highest number of invites.', usage: '=topinvites' },
+                        { name: 'rolevc', description: 'Show users connected to voice channels with a specific role.', usage: '=rolevc' }
+                    ];
+            
+                    const commandsSection = document.getElementById('Category7');
+            
+                    commandsData.forEach(command => {
+                        const commandElement = document.createElement('div');
+                        commandElement.className = 'accordion accordion-flush mt-2';
+                        commandElement.innerHTML = `
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne-${command.name}">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f${command.name}">
+                                        <span class='badge badge-vip rounded-pill'><i class='far fa-crown'></i></span>&nbsp; ${command.name}&nbsp; <span class="command-descreption">-  ${command.description}</span>
+                                    </button>
+                                </h2>
+                                <div id="f${command.name}" class="accordion-collapse collapse" data-bs-parent="#flush-headingOne-${command.name}">
+                                    <div class="accordion-body">
+                                        <span>Usage Examples:</span> <br />
+                                        <span class="examples">
+                                            ${command.usage}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        commandsSection.appendChild(commandElement);
+                    });
+                });
+            </script>
+
+            
+                    
+            <div class="commands-section" id="Category8">
+                  <!--Info--> 
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+    const commandsData = [
+        { name: 'avatar', description: 'Display User Avatar', usage: '=avatar [user] , a' },
+        { name: 'banner', description: 'Display User Banner', usage: '=banner [user] , b' },
+        { name: 'user', description: 'Show Info About User', usage: '=user [user] , u' },
+        { name: 'setsocial', description: 'SetUp social names', usage: '=setsocial [user] , =ss' },
+        { name: 'profile', description: 'Show user profile.', usage: '=profile[user] , p' },
+        { name: 'roleinfo', description: 'Show Info About role', usage: '=roleinfo[role] , ri' },
+        { name: 'server', description: 'Show information about the server', usage: '=server' },
+        { name: 'stats', description: 'Display server statistics', usage: '=stats/=st,=vc' },
+        { name: 'serveravatar', description: 'Show the server\'s avatar', usage: '=serveravatar/ aserver' },
+        { name: 'serverbanner', description: 'Show the server\'s banner', usage: '=serverbanner/bserver' },
+        { name: 'channel-info', description: 'Channel information', usage: '=channel-info [channel],cinfo' },
+        { name: 'botcmds', description: 'Bot cmds ping , botinfo , vote , uptime', usage: 'ping , botinfo , vote , uptime' }
+    ];
+
+    const commandsSection = document.getElementById('Category8');
+
+    commandsData.forEach(command => {
+        const commandElement = document.createElement('div');
+        commandElement.className = 'accordion accordion-flush mt-2';
+        commandElement.innerHTML = `
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne-${command.name}">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f${command.name}">
+                        <span class='emoji'>${command.name}</span>&nbsp; ${command.description} <span class="command-descreption"></span>
+                    </button>
+                </h2>
+                <div id="f${command.name}" class="accordion-collapse collapse" data-bs-parent="#flush-headingOne-${command.name}">
+                    <div class="accordion-body">
+                        <span>Usage Examples:</span> <br />
+                        <span class="examples">${command.usage}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+        commandsSection.appendChild(commandElement);
+    });
+});
+
+            </script>
+
+
+            <div class="commands-section" id="Category9">
+              <!--secirty-->
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const commandsData = [
+        { name: 'antilinks on', description: 'Turn on anti links system', usage: '/antilinks on' },
+        { name: 'antilinks off', description: 'Turn off anti links system', usage: '/antilinks off' },
+        { name: 'antibots on', description: 'Turn on anti bots system', usage: '/antibots on' },
+        { name: 'antibots off', description: 'Turn off anti bots system', usage: '/antibots off' },
+        { name: 'antiwebhooks on', description: 'Turn on anti webhooks system', usage: '/antiwebhooks on' },
+        { name: 'antiwebhooks off', description: 'Turn off anti webhooks system', usage: '/antiwebhooks off' },
+        { name: 'checkscy', description: 'Check security setups', usage: '/checkscy' }
+    ];
+
+
+    const commandsSection = document.getElementById('Category9');
+
+    commandsData.forEach(command => {
+        const commandElement = document.createElement('div');
+        commandElement.className = 'accordion accordion-flush mt-2';
+        commandElement.innerHTML = `
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne-${command.name}">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f${command.name}">
+                        <span class='emoji'>${command.name}</span>&nbsp; ${command.description}
+                    </button>
+                </h2>
+                <div id="f${command.name}" class="accordion-collapse collapse" data-bs-parent="#flush-headingOne-${command.name}">
+                    <div class="accordion-body">
+                        <span>Usage:</span> <br />
+                        <span class="examples">${command.usage}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+        commandsSection.appendChild(commandElement);
+    });
+});
+
+            </script>
+                    
+                    
+                
+            </div>
+        </div>
+    </div>
+
+        <!-- footer -->
+
+        <div class="footer-clean bg-dark">
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Quick access</h3>
+                            <ul>
+                                <li><a href="../../#Features">Features</a></li>
+                                <li><a href="../../#Statics">Statics</a></li>
+                                <li><a href="../../#FAQ">Ask me</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="https://discord.gg/3MVXjDA85d">Team</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Links</h3>
+                            <ul>
+                                <li><a href="https://discord.gg/3MVXjDA85d">Support server</a></li>
+                                <li><a href="https://discord.com/api/oauth2/authorize?client_id=1131780123956363375&permissions=8&scope=bot">Invite bot</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 item social"><a href="https://discord.gg/3MVXjDA85d"><ion-icon name="logo-discord"></a>
+                            <p class="copyright">Dynasty Bot</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-footer font-small text-light mt-5">
+                <div class="footer-copyright text-center">Made with 💖 by
+                    <a href="https://discord.gg/3MVXjDA85d">DYNASTY TEAM</a>
+                    © 2024 Copyright
+                  </div>
+                </div>
+            </footer>
+        </div>
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/fontawesome/all.min.js"></script>
+    <script src="/js/animation.js"></script>
+    <script>
+        function active(elm){
+            document.getElementById("CategoryBtnAll").classList.remove("active");
+            
+                document.getElementById("CategoryBtn0").classList.remove("active");
+                document.getElementById("Category0").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn1").classList.remove("active");
+                document.getElementById("Category1").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn2").classList.remove("active");
+                document.getElementById("Category2").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn3").classList.remove("active");
+                document.getElementById("Category3").setAttribute("hidden", "");
+
+                document.getElementById("CategoryBtn4").classList.remove("active");
+                document.getElementById("Category4").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn5").classList.remove("active");
+                document.getElementById("Category5").setAttribute("hidden", "");
+
+                document.getElementById("CategoryBtn6").classList.remove("active");
+                document.getElementById("Category6").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn7").classList.remove("active");
+                document.getElementById("Category7").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn8").classList.remove("active");
+                document.getElementById("Category8").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn9").classList.remove("active");
+                document.getElementById("Category9").setAttribute("hidden", "");
+
+                document.getElementById("CategoryBtn10").classList.remove("active");
+                document.getElementById("Category10").setAttribute("hidden", "");
+            
+            elm.classList.add("active");
+            if(elm.id.replace("CategoryBtn", "") == "All"){
+                
+                    document.getElementById("Category0").removeAttribute("hidden");
+                
+                    document.getElementById("Category1").removeAttribute("hidden");
+                
+                    document.getElementById("Category2").removeAttribute("hidden");
+                
+                    document.getElementById("Category3").removeAttribute("hidden");
+
+                    document.getElementById("Category4").removeAttribute("hidden");
+
+                    document.getElementById("Category5").removeAttribute("hidden");
+
+                    document.getElementById("Category6").removeAttribute("hidden");
+
+                    document.getElementById("Category7").removeAttribute("hidden");
+
+                    document.getElementById("Category8").removeAttribute("hidden");
+
+                    document.getElementById("Category9").removeAttribute("hidden");
+
+                    document.getElementById("Category10").removeAttribute("hidden");
+                
+            }else{
+                document.getElementById("Category" + elm.id.replace("CategoryBtn", "")).removeAttribute("hidden");
+            }
+        }
+        document.getElementById("CategoryBtnAll").click();
+        function search(arg){
+            let commands = JSON.parse(document.getElementById("commands").value);
+            let cmds = [];
+            commands.forEach(category => {
+                category.commands.forEach(command => {
+                    cmds.push(command);
+                })
+            })
+            let existedCmds = cmds.filter(obj => obj.includes(arg.toLowerCase()));
+            cmds.forEach(cmd => {
+                document.getElementById(cmd).setAttribute("hidden", "");
+            })
+            existedCmds.forEach(cmd => {
+                document.getElementById(cmd).removeAttribute("hidden");
+            })
+        }
+    </script>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
